@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap');
+
+/* Global */
+
+*{
+  box-sizing: border-box; }
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* wrapper */
+
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* header */
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 32px 0 32px 0;
+}
+
+.header-call{
+    padding: 8px 24px 8px 24px;
+    border: 1px solid #121212;
+    text-decoration: none;
+    color: black;
+}
+/* nav-bar */
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropbtn {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    margin-left: 20px;
+    cursor: pointer;
+    color: #8792A7;
+}
+
+.dropbtn:hover {
+color: #000;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    text-align: left;
+    z-index: 1;
+}
+
+.content {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.content:hover {
+    color: #018FDE;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav-bar {
+    display: flex;
+    font-size: 13px;
+    font-weight: 500;
+    align-items: center;
+}
+
+.nav-link {
+    margin-left: 40px;
+    color: #8792A7;
+    text-decoration: none;
+
+}
+
+.nav-link:first-child {
+    margin-left: 0;
+}
+
+.nav-link:hover {
+  color: #000;
+}
+
+.nav-link:active {
+  color: #018FDE;
+}
+
+/* main */
+
+.main-title{
+    display: flex;
+    justify-content: center;
+}
+
+/* main-title */
+
+.title{
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 80px;
+    margin-top: 150px;
+}
+
+.sub-title{
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 34px;
+    color: #018FDE;
+    background-image: url(../img/Decor.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+
+.consultation{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.consultation-button{
+    padding: 8px 24px 8px 24px;
+    border: 1px solid #121212;
+    color: white;
+    background-color: black;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    width: 211px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.consultation-title{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+/* contact-us */
+
+.contact-us{
+    margin-top: 250px;
+}
+
+
+.fieldset{
+    width: 210px;
+    height: 60px;
+}
+
+.contact-us-title{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #018FDE;
+    text-align: center;
+}
+
+.us-title{
+    color: black;
+}
+
+.contact-form{
+    display: grid;
+    grid-template-areas:"enter-text last-name" "number enter-email" "comment comment" "send-button send-button";
+    background-color: white;
+    margin: 32px 390px 70px 390px;
+}
+
+.name{
+    margin-top: 9px;
+    width: 211px;
+    height: 40px;
+    border: none;
+}
+
+.form__member{
+    margin-top: 9px;
+    border: none;
+    border-color: #8792A7;
+}
+
+
+.send-button{
+    margin-left: 460px;
+    padding: 8px 24px 8px 24px;
+    border: 1px solid #121212;
+    color: white;
+    background-color: black;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    width: 211px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+/* footer */
+
+.main-footer{
+    background-color: #121212;
+    margin-top: 200px;
+}
+
+.footer-info{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.footer-text{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #DBDBDB;
+}
+
+.footer-text-number{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #DBDBDB;
+    padding-left: 55px;
+}
+
+.footer-info-contact{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+}
+
+.footer-first-column{
+    margin-top: 72px;
+}
+
+.footer-second-column{
+    margin-top: 45px;
+}
+
+.footer-third-column{
+    margin-top: 45px;
+}
+
+
+@media screen and (max-width: 768px){
+    .wrapper{
+    width: 768px;
+    margin: 0 auto;
+    };
+
+
+    .main-footer{
+        margin: 0;
+        padding: 0;
+    };
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Express</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+
+<header class="header">
+
+  <div class="header-intro">
+    <a class="header-logo">
+      <svg width="66" height="20" viewBox="0 0 66 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3.32999 12.6491H7.01677V15.4124H0V0H7.01677V2.71563H3.32999V6.33648H6.77891V8.95682H3.32999V12.6491Z"
+          fill="#121212" />
+        <path
+          d="M12.9151 11.601L11.1549 15.4124H7.84871L11.0836 9.21886L8.06278 3.78759H11.5355L12.9151 7.26551L14.2946 3.78759H17.7673L14.7465 9.21886L17.9814 15.4124H14.6752L12.9151 11.601Z"
+          fill="#121212" />
+        <path
+          d="M24.8441 15.6506H24.3446C23.5359 15.6506 22.8858 15.4601 22.3942 15.0789V19.2H19.2069V3.78759H21.8947V4.64516C22.3863 3.91464 23.2029 3.54938 24.3446 3.54938H24.8441C26.8104 3.54938 27.7935 4.59752 27.7935 6.6938V12.5062C27.7935 14.6025 26.8104 15.6506 24.8441 15.6506ZM22.3942 6.31266V12.8873C22.3942 13.0144 22.4338 13.1256 22.5131 13.2208C22.6083 13.3161 22.7193 13.3638 22.8461 13.3638H24.1543C24.2812 13.3638 24.3843 13.3161 24.4636 13.2208C24.5587 13.1256 24.6063 13.0144 24.6063 12.8873V6.31266C24.6063 6.18561 24.5587 6.07444 24.4636 5.97916C24.3843 5.88387 24.2812 5.83623 24.1543 5.83623H22.8461C22.7193 5.83623 22.6083 5.88387 22.5131 5.97916C22.4338 6.07444 22.3942 6.18561 22.3942 6.31266Z"
+          fill="#121212" />
+        <path
+          d="M34.909 3.54938H35.5274V6.64615H33.9576C33.4184 6.64615 33.1488 6.92407 33.1488 7.4799V15.4124H29.9616V3.78759H32.8634V4.9072C33.3233 4.00199 34.0051 3.54938 34.909 3.54938Z"
+          fill="#121212" />
+        <path
+          d="M42.5904 3.54938C44.5567 3.54938 45.5399 4.59752 45.5399 6.6938V10.4576H40.1405V12.8873C40.1405 13.0144 40.1802 13.1256 40.2595 13.2208C40.3546 13.3161 40.4656 13.3638 40.5924 13.3638H41.9007C42.0275 13.3638 42.1306 13.3161 42.2099 13.2208C42.305 13.1256 42.3526 13.0144 42.3526 12.8873V11.601H45.5399V12.5062C45.5399 14.6025 44.5567 15.6506 42.5904 15.6506H39.9027C37.9364 15.6506 36.9532 14.6025 36.9532 12.5062V6.6938C36.9532 4.59752 37.9364 3.54938 39.9027 3.54938H42.5904ZM40.1405 8.36129H42.3526V6.21737C42.3526 6.09032 42.305 5.97916 42.2099 5.88387C42.1306 5.78859 42.0275 5.74094 41.9007 5.74094H40.5924C40.4656 5.74094 40.3546 5.78859 40.2595 5.88387C40.1802 5.97916 40.1405 6.09032 40.1405 6.21737V8.36129Z"
+          fill="#121212" />
+        <path
+          d="M52.7605 8.12308C54.7268 8.12308 55.7099 9.17122 55.7099 11.2675V12.5062C55.7099 14.6025 54.7268 15.6506 52.7605 15.6506H50.1203C48.154 15.6506 47.1709 14.6025 47.1709 12.5062V11.7677H50.1203V12.8159C50.1203 12.9429 50.1599 13.0541 50.2392 13.1494C50.3344 13.2447 50.4454 13.2923 50.5722 13.2923H52.5226C52.6495 13.2923 52.7526 13.2447 52.8318 13.1494C52.927 13.0541 52.9746 12.9429 52.9746 12.8159V11.3866C52.9746 11.2596 52.927 11.1484 52.8318 11.0531C52.7526 10.9578 52.6495 10.9102 52.5226 10.9102H50.0727C48.1064 10.9102 47.1233 9.86204 47.1233 7.76576V6.6938C47.1233 4.59752 48.1064 3.54938 50.0727 3.54938H52.5702C54.5365 3.54938 55.5196 4.59752 55.5196 6.6938V7.12258H52.5702V6.38412C52.5702 6.25707 52.5226 6.14591 52.4275 6.05062C52.3482 5.95534 52.2451 5.90769 52.1183 5.90769H50.3106C50.1837 5.90769 50.0727 5.95534 49.9776 6.05062C49.8983 6.14591 49.8586 6.25707 49.8586 6.38412V7.64665C49.8586 7.7737 49.8983 7.88486 49.9776 7.98015C50.0727 8.07544 50.1837 8.12308 50.3106 8.12308H52.7605Z"
+          fill="#121212" />
+        <path Hamlet, [04.12.2021 13:16]
+          d="M63.0506 8.12308C65.0169 8.12308 66 9.17122 66 11.2675V12.5062C66 14.6025 65.0169 15.6506 63.0506 15.6506H60.4104C58.4441 15.6506 57.4609 14.6025 57.4609 12.5062V11.7677H60.4104V12.8159C60.4104 12.9429 60.45 13.0541 60.5293 13.1494C60.6244 13.2447 60.7354 13.2923 60.8623 13.2923H62.8127C62.9396 13.2923 63.0427 13.2447 63.1219 13.1494C63.2171 13.0541 63.2646 12.9429 63.2646 12.8159V11.3866C63.2646 11.2596 63.2171 11.1484 63.1219 11.0531C63.0427 10.9578 62.9396 10.9102 62.8127 10.9102H60.3628C58.3965 10.9102 57.4134 9.86204 57.4134 7.76576V6.6938C57.4134 4.59752 58.3965 3.54938 60.3628 3.54938H62.8603C64.8266 3.54938 65.8097 4.59752 65.8097 6.6938V7.12258H62.8603V6.38412C62.8603 6.25707 62.8127 6.14591 62.7176 6.05062C62.6383 5.95534 62.5352 5.90769 62.4084 5.90769H60.6006C60.4738 5.90769 60.3628 5.95534 60.2676 6.05062C60.1884 6.14591 60.1487 6.25707 60.1487 6.38412V7.64665C60.1487 7.7737 60.1884 7.88486 60.2676 7.98015C60.3628 8.07544 60.4738 8.12308 60.6006 8.12308H63.0506Z"
+          fill="#121212" />
+      </svg>
+    </a>
+  </div>
+
+  <nav class="nav-bar">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#">About us</a>
+        <div class="dropdown">
+          <button class="dropbtn">Our services
+            <img src="./img/coolicon.png">
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a class="content" href="#">Lorem ipsum</a>
+            <a class="content" href="#">Lorem ipsum</a>
+            <a class="content" href="#">Lorem ipsum</a>
+            <a class="content" href="#">Lorem ipsum</a>
+          </div>
+        </div>
+        <a class="nav-link" href="#">Contact us</a>
+  </nav>
+
+    <a class="header-call" href="tel:+44-2020202020" ">Call us</a>
+
+</header>
+
+<main class="main">
+
+  <section class="main-title">
+    <div>
+      <h1 class="title" >Lorem ipsum set
+        <br> ammet test-test</h1>
+      <h3 class="sub-title">LET US HELP YOU GET IT ALL BACK!</h3>
+      <div class="consultation-title">
+      <p class="consultation">We currently take cases <br>
+         that are $10,000 US and up</p>
+      <button class="consultation-button">Get a free consultation</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-us">
+    <div>
+      <h3 class="contact-us-title">Contact <span class="us-title">Us</span></h3>
+      <form class="contact-form">
+        <fieldset class="fieldset form__fieldset">
+          <legend class="legend-first-name enter-text">First Name</legend>
+
+              <label class="form__title" for="enter-text"></label>
+              <input class="form__member " required type="text" id="enter-text" placeholder="Enter text |">
+
+        </fieldset>
+            <p class="last-name">
+              <label class="form__title" for="last-name"></label>
+              <input class="form__member name" required type="text" id="last-name" placeholder="Last name">
+            </p>
+            <p class="number">
+              <label class="form__title" for="number"></label>
+              <input class="form__member" required type="text" id="number" placeholder="+1">
+            </p>
+            <p class="enter-email">
+              <label class="form__title" for="enter-email"></label>
+              <input class="form__member" required type="text" id="enter-email" placeholder="Enter email Copy">
+            </p>
+            <p class="comment">
+              <label class="form__title" for="tell-us"></label>
+              <input class="form__member" required type="text" id="tell-us" placeholder="Tell Us What Happened">
+            </p>
+    </div>
+
+            <button class="send-button">Send</button>
+
+  </section>
+
+</main>
+
+<footer class="main-footer">
+  <div class="footer-container">
+    <div class="footer-first-column">
+      <div>
+      <a>
+        <img src="./img/Express footer png.png">
+      </a>
+      </div>
+    <p class="footer-text">All Rights Reserved to info.com</p>
+    <p class="footer-text">© DDD – Web Marketing</p>
+    <p class="footer-text">Privacy Policy</p>
+    <img src="./img/DMCAd.png" width="82" height="24" alt="марка">
+
+    </div>
+
+  <div class="contact">
+    <h4 class="footer-info-contact">CONTACT US</h4>
+    <span class="footer-text" >UK</span><a class="footer-text-number" href="tel:+44-2020202020">+44-2020202020</a>
+    <a class="footer-text-number" href="tel:+44-2020202020">+44-2020202020</a>
+    <span class="footer-text">AUT</span><a class="footer-text-number" href="tel:+44-2020202020">+44-2020202020</a>
+    <span class="footer-text">AUS</span><a class="footer-text-number" href="tel:+44-2020202020">+44-2020202020</a>
+  </div>
+
+    <div class="footer-second-column">
+      <h4 class="footer-info">ADDRESS</h4>
+      <p class="footer-text">Lorem ipsum set amet</p>
+      <h4 class="footer-info">OUR OFFICE HOURS</h4>
+      <p class="footer-text">Mon-Fr: 8:00-18:00 GMT</p>
+      <p class="footer-text">Sat/Su: Closed</p>
+    </div>
+
+    <div class="footer-third-column">
+      <h4 class="footer-info">Email US</h4>
+      <a class="footer-text" class="email_link" href="mailto:info@info.com">info@info.com</a>
+    </div>
+
+  </div>
+</footer>
+
+</div>
+</body>
+</html>
